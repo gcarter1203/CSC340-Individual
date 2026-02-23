@@ -1,0 +1,1152 @@
+I-Logix-RPY-Archive version 8.5.2 Modeler C++ 1159120
+{ ISubsystem 
+	- _id = GUID f4e6828d-f84e-48e5-b8b9-bb1b498d4e6f;
+	- _myState = 8192;
+	- _name = "Default";
+	- _objectCreation = "262829552025101465682";
+	- _umlDependencyID = "2153";
+	- _lastID = 16;
+	- weakCGTime = 8.29.2025::14:19:53;
+	- strongCGTime = 8.22.2025::15:1:10;
+	- _defaultComposite = GUID 486bc2a0-9b1e-4333-8124-b0606c919de5;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 6;
+		- value = 
+		{ IClass 
+			- _id = GUID 486bc2a0-9b1e-4333-8124-b0606c919de5;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _objectCreation = "263029552025101465482";
+			- _umlDependencyID = "2246";
+			- weakCGTime = 8.27.2025::15:10:40;
+			- strongCGTime = 8.22.2025::15:1:10;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 6ff5b1a6-eb48-473c-bf40-e9ec0cdf76ec;
+			- _myState = 8192;
+			- _name = "Patient";
+			- _objectCreation = "263229552025101465282";
+			- _umlDependencyID = "2160";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Hospital Managment System";
+				- _id = GUID 86117787-a5c5-48b6-be15-c89fb45a4425;
+			}
+			- weakCGTime = 8.29.2025::14:19:53;
+			- strongCGTime = 8.27.2025::14:59:56;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID d23a0652-4830-47ef-aa8a-d3e25b4c1fc3;
+					- _myState = 10240;
+					- _name = "itsAppointment";
+					- _objectCreation = "263429552025101465082";
+					- _umlDependencyID = "2938";
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 81b47994-b0f0-4971-b555-a5b59b40ced6;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 3bb71889-19ae-451b-b1b0-cb68561752a6;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 85200f0a-d5ec-4f35-975a-d453ffdf8469;
+			- _myState = 8192;
+			- _name = "Doctor";
+			- _objectCreation = "263629552025101464882";
+			- _umlDependencyID = "2063";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Hospital Managment System";
+				- _id = GUID 86117787-a5c5-48b6-be15-c89fb45a4425;
+			}
+			- weakCGTime = 8.29.2025::14:22:31;
+			- strongCGTime = 8.27.2025::15:0:37;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 9351db01-d72d-4fa4-a7eb-2437a2ee8756;
+					- _myState = 10240;
+					- _name = "itsAppointment";
+					- _objectCreation = "263829552025101464682";
+					- _umlDependencyID = "2947";
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 81b47994-b0f0-4971-b555-a5b59b40ced6;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ff39835b-bb00-48d4-87da-900b36d036aa;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 028a650a-26ef-41bf-90fa-a9f479d07159;
+					- _myState = 10240;
+					- _name = "itsSchedule";
+					- _objectCreation = "264029552025101464482";
+					- _umlDependencyID = "2584";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 25210e96-efb2-4b62-a931-014552ad2ff8;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 131f3a85-3cd5-4bca-9738-d1b9308c4492;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 81b47994-b0f0-4971-b555-a5b59b40ced6;
+			- _myState = 8192;
+			- _name = "Appointment";
+			- _objectCreation = "264229552025101464282";
+			- _umlDependencyID = "2602";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Hospital Managment System";
+				- _id = GUID 86117787-a5c5-48b6-be15-c89fb45a4425;
+			}
+			- _lastID = 6;
+			- weakCGTime = 8.29.2025::14:20:0;
+			- strongCGTime = 8.27.2025::15:0:52;
+			- Attrs = { IRPYRawContainer 
+				- size = 6;
+				- value = 
+				{ IAttribute 
+					- _id = GUID 8a421d61-10d8-4997-b703-507134e885bd;
+					- _name = "date";
+					- _objectCreation = "264429552025101464082";
+					- _umlDependencyID = "1849";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID bd5b8bb0-7b37-471d-ace9-fac9476b33bc;
+					- _name = "time";
+					- _objectCreation = "264629552025101463882";
+					- _umlDependencyID = "1875";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID e0269480-54f4-49c5-ae8e-9a321321a57c;
+					- _name = "patientid";
+					- _objectCreation = "264829552025101463682";
+					- _umlDependencyID = "2406";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID e8c9bb96-7c27-4006-95ce-1a1ccff20653;
+					- _name = "doctorid";
+					- _objectCreation = "265029552025101463482";
+					- _umlDependencyID = "2291";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID c67ecaf2-472a-4c7d-ab23-f682d0451e61;
+					- _name = "schedularid";
+					- _objectCreation = "265229552025101463282";
+					- _umlDependencyID = "2595";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "int";
+						- _id = GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+				{ IAttribute 
+					- _id = GUID 3337e08b-67be-4d17-9d51-9090a0460baa;
+					- _name = "confirmation";
+					- _objectCreation = "265429552025101463082";
+					- _umlDependencyID = "2724";
+					- _typeOf = { IHandle 
+						- _m2Class = "IType";
+						- _filename = "PredefinedTypesC++.sbs";
+						- _subsystem = "PredefinedTypesCpp";
+						- _class = "";
+						- _name = "char*";
+						- _id = GUID a1f818e6-c022-42d5-bbc0-075bf073b055;
+					}
+					- _isOrdered = 0;
+					- _protection = iPublic;
+					- _static = 0;
+					- _isReference = 0;
+					- _isConstant = 0;
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 3bb71889-19ae-451b-b1b0-cb68561752a6;
+					- _myState = 10240;
+					- _name = "itsPatient";
+					- _objectCreation = "265629552025101462882";
+					- _umlDependencyID = "2505";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 6ff5b1a6-eb48-473c-bf40-e9ec0cdf76ec;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID d23a0652-4830-47ef-aa8a-d3e25b4c1fc3;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID ff39835b-bb00-48d4-87da-900b36d036aa;
+					- _myState = 10240;
+					- _name = "itsDoctor";
+					- _objectCreation = "265829552025101462682";
+					- _umlDependencyID = "2399";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 85200f0a-d5ec-4f35-975a-d453ffdf8469;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 9351db01-d72d-4fa4-a7eb-2437a2ee8756;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID d19029c6-4808-469d-a70b-82a01634393a;
+					- _myState = 10240;
+					- _name = "itsSchedular";
+					- _objectCreation = "266029552025101462482";
+					- _umlDependencyID = "2694";
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID ed49879b-3640-4ee0-b3f8-193011a653f5;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID d76ca719-94b9-4a1f-95e5-bacee7e790f3;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 25210e96-efb2-4b62-a931-014552ad2ff8;
+			- _myState = 8192;
+			- _name = "Schedule";
+			- _objectCreation = "266229552025101462282";
+			- _umlDependencyID = "2248";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Hospital Managment System";
+				- _id = GUID 86117787-a5c5-48b6-be15-c89fb45a4425;
+			}
+			- weakCGTime = 8.27.2025::15:8:6;
+			- strongCGTime = 8.27.2025::15:8:6;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 131f3a85-3cd5-4bca-9738-d1b9308c4492;
+					- _myState = 10240;
+					- _name = "itsDoctor";
+					- _objectCreation = "266429552025101462082";
+					- _umlDependencyID = "2390";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 85200f0a-d5ec-4f35-975a-d453ffdf8469;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 028a650a-26ef-41bf-90fa-a9f479d07159;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID ed49879b-3640-4ee0-b3f8-193011a653f5;
+			- _myState = 8192;
+			- _name = "Schedular";
+			- _objectCreation = "266629552025101461882";
+			- _umlDependencyID = "2367";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IUCDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Hospital Managment System";
+				- _id = GUID b98b0d06-ed8e-4968-97c1-50e21a9f60c4;
+			}
+			- weakCGTime = 8.29.2025::14:19:56;
+			- strongCGTime = 8.27.2025::15:8:16;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID d76ca719-94b9-4a1f-95e5-bacee7e790f3;
+					- _myState = 10240;
+					- _name = "itsAppointment";
+					- _objectCreation = "266829552025101461682";
+					- _umlDependencyID = "2947";
+					- _multiplicity = "*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 81b47994-b0f0-4971-b555-a5b59b40ced6;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID d19029c6-4808-469d-a70b-82a01634393a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- UseCases = { IRPYRawContainer 
+		- size = 6;
+		- value = 
+		{ IUseCase 
+			- _id = GUID 5b39cd60-9858-4aa6-b09d-46fdc32d9407;
+			- _myState = 8192;
+			- _name = "Request Medicine";
+			- _objectCreation = "267029552025101461482";
+			- _umlDependencyID = "2978";
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 6607b9ad-3ffb-4d8c-b609-92f5838289b7;
+					- _myState = 10240;
+					- _name = "itsDoctorActor";
+					- _objectCreation = "267229552025101461282";
+					- _umlDependencyID = "2895";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID caf6dd4f-774c-45a6-858f-c66d84c05b2c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 3817b492-6bb1-463e-81d6-3685fd285cae;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 22d52f80-ab9d-436d-835a-fc213dbd42d9;
+					- _myState = 10240;
+					- _name = "itsPatientActor";
+					- _objectCreation = "267429552025101461082";
+					- _umlDependencyID = "3001";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID ce3a12a7-5b1f-4b47-9b96-e8003680c2e5;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ebf9de43-4511-43e8-b9e7-5731fe4dd57b;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID a65347f4-afbe-448e-829f-52a860b76388;
+			- _myState = 8192;
+			- _name = "Pay Bill";
+			- _objectCreation = "267629552025101460882";
+			- _umlDependencyID = "2129";
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 159888af-df53-4db3-aeec-af7fbbc147e2;
+					- _myState = 10240;
+					- _name = "itsClerkActor";
+					- _objectCreation = "267829552025101460682";
+					- _umlDependencyID = "2782";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID 9ca58681-ad61-49a8-8e13-d9fd58a6e56b;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 184259ad-3bab-4d19-a2a1-0b452f4f0ef7;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 8a049134-681f-4cc9-904c-374ea3cc6f72;
+					- _myState = 10240;
+					- _name = "itsPatientActor";
+					- _objectCreation = "268029552025101460482";
+					- _umlDependencyID = "3001";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID ce3a12a7-5b1f-4b47-9b96-e8003680c2e5;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID a9ba8970-1c50-4284-883f-55635bf5e55e;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID 38f57acc-7f3f-4e10-a121-daf255d6f729;
+			- _myState = 8192;
+			- _name = "Login System";
+			- _objectCreation = "268229552025101460282";
+			- _umlDependencyID = "2585";
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID f81526c0-be4d-4e1e-b392-54e02ca741c3;
+					- _myState = 10240;
+					- _name = "itsUserActor";
+					- _objectCreation = "268429552025101460082";
+					- _umlDependencyID = "2691";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID 6abf3e03-5b11-4cc6-864e-551dd581bef4;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 9587b971-5ff6-4e40-92d2-2229960034fb;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID d195c2bc-7503-4e03-bc47-1ba46b571b17;
+			- _myState = 8192;
+			- _name = "Make Appointment";
+			- _objectCreation = "268629552025101459882";
+			- _umlDependencyID = "3002";
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 5e25492c-bec8-49db-859e-77f6eff1cd1d;
+					- _myState = 10240;
+					- _name = "itsSchedularActor";
+					- _objectCreation = "268829552025101459682";
+					- _umlDependencyID = "3217";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID e1c7684e-d380-4215-8888-61aea6168038;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 48250f96-297d-4bd8-8470-5a713f4aeb7a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID a57e7254-a192-44cd-8003-3705b7de4ce3;
+					- _myState = 10240;
+					- _name = "itsPatientActor";
+					- _objectCreation = "269029552025101459482";
+					- _umlDependencyID = "3010";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID ce3a12a7-5b1f-4b47-9b96-e8003680c2e5;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID feb5bdb9-b0f8-40fd-8ff9-fe27a2781515;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID e1c82dfd-70b7-4018-88f7-9856aa0dcbb9;
+			- _myState = 8192;
+			- _name = "Cancel Appointment";
+			- _objectCreation = "269229552025101459282";
+			- _umlDependencyID = "3193";
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID c03cb64f-632e-435f-bad7-997c35e1cdaf;
+					- _myState = 10240;
+					- _name = "itsSchedularActor";
+					- _objectCreation = "269429552025101459082";
+					- _umlDependencyID = "3208";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID e1c7684e-d380-4215-8888-61aea6168038;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID b70548c2-666b-44f3-a931-35225b98f97c;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 8770473f-c194-4fef-8ff6-03524cb7b56d;
+					- _myState = 10240;
+					- _name = "itsPatientActor";
+					- _objectCreation = "269629552025101458882";
+					- _umlDependencyID = "3019";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID ce3a12a7-5b1f-4b47-9b96-e8003680c2e5;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 3f119673-19d7-41de-9a86-1eed1830778a;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+		{ IUseCase 
+			- _id = GUID 0f507817-0aaa-4c02-a70d-82fa6c287554;
+			- _myState = 8192;
+			- _name = "Logout System";
+			- _objectCreation = "269829552025101458682";
+			- _umlDependencyID = "2732";
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID c3884e45-62f8-42fa-8871-eb3f9c172840;
+					- _myState = 10240;
+					- _name = "itsSchedularActor";
+					- _objectCreation = "270029552025101458482";
+					- _umlDependencyID = "3199";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID e1c7684e-d380-4215-8888-61aea6168038;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 72eb4c35-182b-4a40-81c9-4ead3051a789;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 73ac08af-6070-4590-89d6-c6bf5a6f4849;
+					- _myState = 10240;
+					- _name = "itsDoctorActor";
+					- _objectCreation = "270229552025101458282";
+					- _umlDependencyID = "2895";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID caf6dd4f-774c-45a6-858f-c66d84c05b2c;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 1d64fdcf-2035-4fd1-9bb8-9ff6d7b51b3e;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 009a1df6-0742-4cf0-9401-f8dcf2d5fbe0;
+					- _myState = 10240;
+					- _name = "itsPatientActor";
+					- _objectCreation = "270429552025101458082";
+					- _umlDependencyID = "3001";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID ce3a12a7-5b1f-4b47-9b96-e8003680c2e5;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID ca76ecfb-9859-40ca-9930-ff3919d8bcca;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 187a8f18-3d86-46fd-865c-b7eace2c279d;
+					- _myState = 10240;
+					- _name = "itsClerkActor";
+					- _objectCreation = "270629552025101457882";
+					- _umlDependencyID = "2782";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IActor";
+						- _id = GUID 9ca58681-ad61-49a8-8e13-d9fd58a6e56b;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 04dfcba4-80c0-4183-ac3a-27f37ffa3b59;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+			- _EntryPoints = { IRPYRawContainer 
+				- size = 0;
+			}
+		}
+	}
+	- Actors = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ IActor 
+			- _id = GUID ce3a12a7-5b1f-4b47-9b96-e8003680c2e5;
+			- _myState = 8192;
+			- _name = "PatientActor";
+			- _objectCreation = "270829552025101457682";
+			- _umlDependencyID = "2674";
+			- weakCGTime = 8.27.2025::14:59:17;
+			- strongCGTime = 8.27.2025::14:59:17;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID feb5bdb9-b0f8-40fd-8ff9-fe27a2781515;
+					- _myState = 10240;
+					- _name = "itsMake Appointment";
+					- _objectCreation = "271029552025101457482";
+					- _umlDependencyID = "3320";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID d195c2bc-7503-4e03-bc47-1ba46b571b17;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID a57e7254-a192-44cd-8003-3705b7de4ce3;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 3f119673-19d7-41de-9a86-1eed1830778a;
+					- _myState = 10240;
+					- _name = "itsCancel Appointment";
+					- _objectCreation = "271229552025101457282";
+					- _umlDependencyID = "3520";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID e1c82dfd-70b7-4018-88f7-9856aa0dcbb9;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 8770473f-c194-4fef-8ff6-03524cb7b56d;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID ca76ecfb-9859-40ca-9930-ff3919d8bcca;
+					- _myState = 10240;
+					- _name = "itsLogout System";
+					- _objectCreation = "271429552025101457082";
+					- _umlDependencyID = "3050";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID 0f507817-0aaa-4c02-a70d-82fa6c287554;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 009a1df6-0742-4cf0-9401-f8dcf2d5fbe0;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID ebf9de43-4511-43e8-b9e7-5731fe4dd57b;
+					- _myState = 10240;
+					- _name = "itsRequest Medicine";
+					- _objectCreation = "271629552025101456882";
+					- _umlDependencyID = "3323";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID 5b39cd60-9858-4aa6-b09d-46fdc32d9407;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 22d52f80-ab9d-436d-835a-fc213dbd42d9;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID a9ba8970-1c50-4284-883f-55635bf5e55e;
+					- _myState = 10240;
+					- _name = "itsPay Bill";
+					- _objectCreation = "271829552025101456682";
+					- _umlDependencyID = "2465";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID a65347f4-afbe-448e-829f-52a860b76388;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 8a049134-681f-4cc9-904c-374ea3cc6f72;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IActor 
+			- _id = GUID 6abf3e03-5b11-4cc6-864e-551dd581bef4;
+			- _myState = 8192;
+			- _name = "UserActor";
+			- _objectCreation = "272029552025101456482";
+			- _umlDependencyID = "2355";
+			- weakCGTime = 8.27.2025::14:59:42;
+			- strongCGTime = 8.27.2025::14:59:42;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 9587b971-5ff6-4e40-92d2-2229960034fb;
+					- _myState = 10240;
+					- _name = "itsLogin System";
+					- _objectCreation = "272229552025101456282";
+					- _umlDependencyID = "2921";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID 38f57acc-7f3f-4e10-a121-daf255d6f729;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID f81526c0-be4d-4e1e-b392-54e02ca741c3;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IActor 
+			- _id = GUID e1c7684e-d380-4215-8888-61aea6168038;
+			- _myState = 8192;
+			- _name = "SchedularActor";
+			- _objectCreation = "272429552025101456082";
+			- _umlDependencyID = "2863";
+			- weakCGTime = 8.27.2025::14:59:25;
+			- strongCGTime = 8.27.2025::14:59:25;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 48250f96-297d-4bd8-8470-5a713f4aeb7a;
+					- _myState = 10240;
+					- _name = "itsMake Appointment";
+					- _objectCreation = "272629552025101455882";
+					- _umlDependencyID = "3329";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID d195c2bc-7503-4e03-bc47-1ba46b571b17;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 5e25492c-bec8-49db-859e-77f6eff1cd1d;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID b70548c2-666b-44f3-a931-35225b98f97c;
+					- _myState = 10240;
+					- _name = "itsCancel Appointment";
+					- _objectCreation = "272829552025101455682";
+					- _umlDependencyID = "3529";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID e1c82dfd-70b7-4018-88f7-9856aa0dcbb9;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID c03cb64f-632e-435f-bad7-997c35e1cdaf;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 72eb4c35-182b-4a40-81c9-4ead3051a789;
+					- _myState = 10240;
+					- _name = "itsLogout System";
+					- _objectCreation = "273029552025101455482";
+					- _umlDependencyID = "3050";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID 0f507817-0aaa-4c02-a70d-82fa6c287554;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID c3884e45-62f8-42fa-8871-eb3f9c172840;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IActor 
+			- _id = GUID caf6dd4f-774c-45a6-858f-c66d84c05b2c;
+			- _myState = 8192;
+			- _name = "DoctorActor";
+			- _objectCreation = "273229552025101455282";
+			- _umlDependencyID = "2559";
+			- weakCGTime = 8.27.2025::14:59:31;
+			- strongCGTime = 8.27.2025::14:59:31;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 1d64fdcf-2035-4fd1-9bb8-9ff6d7b51b3e;
+					- _myState = 10240;
+					- _name = "itsLogout System";
+					- _objectCreation = "273429552025101455082";
+					- _umlDependencyID = "3050";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID 0f507817-0aaa-4c02-a70d-82fa6c287554;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 73ac08af-6070-4590-89d6-c6bf5a6f4849;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 3817b492-6bb1-463e-81d6-3685fd285cae;
+					- _myState = 10240;
+					- _name = "itsRequest Medicine";
+					- _objectCreation = "273629552025101454882";
+					- _umlDependencyID = "3323";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID 5b39cd60-9858-4aa6-b09d-46fdc32d9407;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 6607b9ad-3ffb-4d8c-b609-92f5838289b7;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IActor 
+			- _id = GUID 9ca58681-ad61-49a8-8e13-d9fd58a6e56b;
+			- _myState = 8192;
+			- _name = "ClerkActor";
+			- _objectCreation = "273829552025101454682";
+			- _umlDependencyID = "2446";
+			- weakCGTime = 8.27.2025::14:59:36;
+			- strongCGTime = 8.27.2025::14:59:36;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 184259ad-3bab-4d19-a2a1-0b452f4f0ef7;
+					- _myState = 10240;
+					- _name = "itsPay Bill";
+					- _objectCreation = "274029552025101454482";
+					- _umlDependencyID = "2456";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID a65347f4-afbe-448e-829f-52a860b76388;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 159888af-df53-4db3-aeec-af7fbbc147e2;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 04dfcba4-80c0-4183-ac3a-27f37ffa3b59;
+					- _myState = 10240;
+					- _name = "itsLogout System";
+					- _objectCreation = "274229552025101454282";
+					- _umlDependencyID = "3050";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IUseCase";
+						- _id = GUID 0f507817-0aaa-4c02-a70d-82fa6c287554;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 187a8f18-3d86-46fd-865c-b7eace2c279d;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+
